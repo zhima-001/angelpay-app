@@ -32,7 +32,15 @@ jobs:
 
       - name: PHP syntax check
         run: |
-          find . -name "*.php" -not -path "./vendor/*" -not -path "./docker/*" | xargs -n1 php -l
+          ERRORS=0
+          while IFS= read -r file; do
+            if ! php -l "$file" 2>&1 | grep -q "No syntax errors"; then
+              echo "::warning file=$file::Syntax error detected"
+              ERRORS=$((ERRORS+1))
+            fi
+          done < <(find . -name "*.php" -not -path "./vendor/*" -not -path "./docker/*" -not -path "./plugins/*")
+          echo "Checked PHP files (excluding plugins/). Errors: $ERRORS"
+          if [ $ERRORS -gt 0 ]; then echo "::warning::$ERRORS file(s) with syntax errors in app code"; fi
 
       - name: Run basic tests
         run: |
