@@ -33,7 +33,7 @@ RUN apk add --no-cache tzdata dcron \
     && apk del tzdata
 
 # 创建应用目录
-RUN mkdir -p /app /run/nginx /var/log/supervisor
+RUN mkdir -p /app /run/nginx /var/log/supervisor /var/log/php
 
 # 复制 Nginx 配置
 COPY docker/nginx.conf /etc/nginx/nginx.conf
