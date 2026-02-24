@@ -9,5 +9,5 @@ $dbconfig = array(
     'user'   => getenv('DB_USER') ?: 'root',
     'pwd'    => getenv('DB_PASS') ?: '',
     'dbname' => getenv('DB_NAME') ?: 'tianshi_ceshi_zhandian_kkwl',
-    'dbqz'   => 'pre_'
+    'dbqz'   => 'pay'
 );
