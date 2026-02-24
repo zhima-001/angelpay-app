@@ -1,0 +1,4 @@
+# 每分钟执行订单统计
+* * * * * curl -s http://localhost/cron.php?do=order&key=427061 > /dev/null 2>&1
+# 凌晨0点执行结算
+0 0 * * * curl -s http://localhost/cron.php?do=settle&key=427061 > /dev/null 2>&1

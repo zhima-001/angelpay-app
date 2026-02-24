@@ -25,8 +25,8 @@ RUN apk add --no-cache \
         opcache \
     && rm -rf /var/cache/apk/*
 
-# 设置时区
-RUN apk add --no-cache tzdata \
+# 设置时区 + 安装 cron（定时任务）
+RUN apk add --no-cache tzdata dcron \
     && cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && echo "Asia/Shanghai" > /etc/timezone \
     && apk del tzdata
@@ -50,6 +50,9 @@ COPY . /app
 
 # 设置工作目录
 WORKDIR /app
+
+# 安装 cron 定时任务
+COPY docker/crontab /etc/crontabs/root
 
 # 创建必要目录并设置权限
 RUN mkdir -p /app/runtime/log /app/runtime/cache /app/uploads /app/logs \
