@@ -158,7 +158,7 @@ jobs:
           NEW_TAG="${{ needs.build.outputs.sha_short }}"
           
           # 更新 Kustomize overlay 中的镜像 tag
-          sed -i "s|newTag: .*|newTag: ${NEW_TAG}|g" overlays/prod/kustomization.yaml
+          sed -i "s|newTag: .*|newTag: \"${NEW_TAG}\"|g" overlays/prod/kustomization.yaml
           
           echo "Updated image tag to: ${NEW_TAG}"
           cat overlays/prod/kustomization.yaml
