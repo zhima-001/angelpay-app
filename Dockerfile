@@ -49,11 +49,17 @@ COPY docker/supervisord.conf /etc/supervisord.conf
 # 复制应用代码
 COPY . /app
 
+# 复制数据库配置（从环境变量读取）
+COPY docker/config.php /app/config.php
+
 # 设置工作目录
 WORKDIR /app
 
 # 安装 cron 定时任务
 COPY docker/crontab /etc/crontabs/root
+
+# 确保 PHP-FPM 传递环境变量
+RUN echo 'clear_env = no' >> /usr/local/etc/php-fpm.d/www.conf
 
 # 创建必要目录并设置权限
 RUN mkdir -p /app/runtime/log /app/runtime/cache /app/uploads /app/logs \
