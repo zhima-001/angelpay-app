@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>补单查询</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #f8f9fa, #e9ecef);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            padding: 20px;
+            margin: -60px 20px 20px 20px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #ff6f61;
+        }
+        .header p {
+            margin: 5px 0 0 0;
+            font-size: 16px;
+            color: #888;
+        }
+        .input-area input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+        .input-area input:focus {
+            border-color: #ff6f61;
+            outline: none;
+            box-shadow: 0 0 8px rgba(255, 111, 97, 0.3);
+        }
+        .captcha-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .captcha-container img {
+            margin-left: 10px;
+            cursor: pointer;
+            height: 38px;
+        }
+        .captcha-input {
+            flex: 1;
+        }
+        .submit-button, .back-button {
+            width: 100%;
+            padding: 15px;
+            background-color: #ff6f61;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .submit-button:hover, .back-button:hover {
+            background-color: #ff4e42;
+            box-shadow: 0 5px 15px rgba(255, 78, 66, 0.3);
+        }
+        .submit-button:active, .back-button:active {
+            background-color: #ff4e42;
+            box-shadow: 0 3px 10px rgba(255, 78, 66, 0.2);
+        }
+        .link {
+            color: #ff6f61;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .link:hover {
+            color: #ff4e42;
+        }
+        .result {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .result h2 {
+            font-size: 20px;
+            color: #ff6f61;
+            margin-top: 0;
+        }
+        .result p {
+            font-size: 14px;
+            color: #555;
+            margin: 5px 0;
+        }
+        .result .status {
+            font-weight: bold;
+            color: #ff4e42;
+        }
+        .result .success {
+            color: #28a745;
+        }
+        .result .fail {
+            color: #dc3545;
+        }
+        .result .pending {
+            color: #ffc107;
+        }
+        .result .reason {
+            margin-left: 20px;
+        }
+        .result .btn-remind {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #ff6f61;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+        }
+        .result .btn-remind:hover {
+            background-color: #ff4e42;
+            box-shadow: 0 5px 15px rgba(255, 78, 66, 0.3);
+        }
+        .order-block {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            background-color: #fff;
+        }
+        .note {
+            font-size: 14px;
+            color: #888;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .note strong {
+            color: #ff4e42;
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+                margin: -60px 10px 10px 10px;
+            }
+            .header h1 {
+                font-size: 20px;
+            }
+            .header p {
+                font-size: 14px;
+            }
+            .input-area input {
+                font-size: 14px;
+                padding: 10px;
+            }
+            .submit-button, .back-button {
+                padding: 12px;
+                font-size: 14px;
+            }
+            .result h2 {
+                font-size: 18px;
+            }
+            .result p {
+                font-size: 12px;
+            }
+            .order-block {
+                padding: 10px;
+            }
+            .captcha-container img {
+                height: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="search-container">
+        <div class="header"> 
+            <h1>补单查询</h1>
+            <p>Search Order</p>
+            <p class="note"><strong>说明：</strong>一次只能输入一个订单号或一个补单编号</p>
+        </div>
+            <div class="input-area">
+                <input type="text" name="search_number" id="search_number" placeholder="请输入补单编号或订单号">
+            </div>
+            <div class="input-area captcha-container">
+                <input type="text" name="captcha" id="captcha" class="captcha-input" placeholder="请输入验证码">
+                <img src="captcha.php" alt="验证码" onclick="reloadCaptcha()">
+            </div>
+            <button class="submit-button" type="button" onclick="searchOrder()">查询</button>
+    </div>
+    <div class="container" id="result-container" style="display: none;">
+        <div id="result-content"></div>
+        <button class="back-button" type="button" onclick="goBack()">返回</button>
+    </div>
+    <script src="./assets/js/new/jquery.min.js"></script>
+    <script>
+        function reloadCaptcha() {
+            document.querySelector('.captcha-container img').src = 'captcha.php?' + new Date().getTime();
+        }
+
+        function goBack() {
+            document.getElementById('result-container').style.display = 'none';
+            document.getElementById('search-container').style.display = 'block';
+            // 清空输入框内容
+            document.getElementById('search_number').value = '';
+            document.getElementById('captcha').value = '';
+        }
+
+        function searchOrder() {
+            var searchNumber = document.getElementById('search_number').value;
+            var captcha = document.getElementById('captcha').value;
+            var resultContent = document.getElementById('result-content'); 
+            resultContent.innerHTML = '';
+
+            if (searchNumber.trim() === "") {
+                alert("请输入补单编号或订单号");
+                return;
+            }
+            if (captcha.trim() === "") {
+                alert("请输入验证码");
+                return;
+            }
+
+            $.ajax({
+                url: './budancha.php',
+                type: 'POST',
+                dataType: "json",
+                data: {
+                    search_number: searchNumber,
+                    captcha: captcha
+                },
+                success: function(response) {
+                    console.log(response);
+                   
+                    if(response.code == "201"){
+                        reloadCaptcha();
+                        $('#captcha').val('');
+                        alert(response.msg);
+                        return false;
+                    }
+
+                    var budan_arr = ["补单中", "已支付回调", "未支付", "出补单时间", "超时支付无法补", "其他", "单图不符，查询不到", "截图凭证不完整，查询不到"];
+                    var resultHTML = '';
+
+                    if (response.code == 200) {
+                        if(response.type == "1"){
+                            resultHTML = '<div class="result"><h2>补单编号查询结果</h2>';
+                        } else {
+                            resultHTML = '<div class="result"><h2>订单号查询结果</h2>';
+                        }
+                        
+                        resultHTML += `<div class="order-block">
+                            <p>补单编号: ${response.budan_order}</p><br>`;
+
+                        for (var i = 0; i < response.data.length; i++) {
+                            var order = response.data[i];
+
+                            resultHTML += `
+                                <p>商户订单: ${order.shanghu_order}</p>
+                                <p>系统订单: ${order.xitong_order}</p> `;
+                            if(order.budan_status == "0"){
+                                resultHTML += `<p class="status pending">状态: `+budan_arr[order.xiangqing_status]+` <button class="btn-remind" onclick="remind(`+order.xiangqing_id+`)">催处理</button></p>`; 
+                            } else if(order.budan_status == "1"){
+                                resultHTML += `<p class="status success">状态: 补单成功</p>`;
+                            } else {
+                                resultHTML += `<p class="status fail">状态: 补单失败</p>`;
+                                resultHTML += `<p class="reason">失败原因: `+budan_arr[order.xiangqing_status]+`</p>`;
+                            }       
+                        }
+                        resultHTML += '</div>';
+                        
+                        resultContent.innerHTML = resultHTML;
+                    } else {
+                        resultContent.innerHTML = `<div class="result"><h2>${response.msg}</h2></div>`;
+                    }
+
+                    reloadCaptcha();
+                    $('#captcha').val('');
+                    document.getElementById('search-container').style.display = 'none';
+                    document.getElementById('result-container').style.display = 'block';
+                }
+            });
+        }
+
+        function remind(id) {
+            $.ajax({
+                url: './budancuicu.php',
+                type: 'POST',
+                dataType: "json",
+                data: {
+                    id: id,
+                },
+                success: function(response) {
+                    console.log(response);
+                }
+            });
+            alert('已催促处理');
+        }
+    </script>
+</body>
+</html>

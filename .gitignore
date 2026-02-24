@@ -1,0 +1,13 @@
+# 忽略所有 .log 文件
+*.log
+
+# 忽略开发工具的配置目录和临时文件
+.user.ini
+.idea/
+
+/config.php
+/cron_jiqi.php
+.skeema
+
+/budanuploads/**
+/upload/**

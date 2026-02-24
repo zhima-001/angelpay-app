@@ -1,0 +1,40 @@
+/* 鍨傜洿姘村钩灞呬腑 */
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* column鎺掑簭 涓昏酱灞呬腑 */
+
+.rowCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.RowCenter {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+}
+
+/* column鎺掑簭  鍨傜洿姘村钩灞呬腑*/
+
+.columnCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rowStart {
+  display: flex;
+  align-items: center;
+}
+
+.van-hairline--top-bottom::after {
+  border-width: 0;
+}

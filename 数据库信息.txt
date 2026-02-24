@@ -1,0 +1,18 @@
+数据库名称：tianshi_ceshi_zhandian_kkwl	
+用户名：tianshi_ceshi_zhandian_kkwl	
+密码：aRTpiCcJ2rn6pnzt3q1c
+
+
+伪静态：
+location / {
+ if (!-e $request_filename) {
+   rewrite ^/(.[a-zA-Z0-9\-\_]+).html$ /index.php?mod=$1 last;
+ }
+ rewrite ^/pay/(.*)$ /pay.php?s=$1 last;
+}
+location ^~ /plugins {
+  deny all;
+}
+location ^~ /includes {
+  deny all;
+}

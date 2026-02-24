@@ -1,0 +1,100 @@
+p {
+  margin: 0;
+  padding: 0;
+  color: #ffff;
+}
+#app {
+  width: 100vw;
+  background-color: #ffff;
+}
+#app .header {
+  width: 100%;
+  height: 3.6rem;
+  background-color: #4c9d42;
+  position: relative;
+}
+#app .header .text {
+  width: 100%;
+  height: 0.6rem;
+}
+#app .header .money {
+  width: 90%;
+  height: 1.6rem;
+  margin: 0 auto;
+}
+#app .header .money .p1 {
+  font-size: 0.34rem;
+  font-weight: 600;
+  line-height: 0.8rem;
+}
+#app .header .money .p1 span {
+  color: #fdfd65;
+}
+#app .header .money .p2 {
+  font-size: 0.28rem;
+  color: #afe5b2;
+}
+#app .header .text-black {
+  position: absolute;
+  bottom: -1rem;
+  left: 5%;
+  width: 90%;
+  height: 2.4rem;
+  background-color: #ffff;
+  box-shadow: 0.02rem 0.02rem 0.6rem rgba(23, 23, 23, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#app .header .text-black .wx {
+  display: flex;
+  justify-content: center;
+  height: 0.6rem;
+}
+#app .header .text-black .wx img {
+  width: 0.4rem;
+  height: 0.4rem;
+  display: block;
+}
+#app .header .text-black .wx span {
+  font-size: 0.28rem;
+  display: block;
+  margin-left: 0.1rem;
+}
+#app .header .text-black .zhifu {
+  font-size: 0.3rem;
+  width: 3.4rem;
+  text-align: center;
+  line-height: 0.8rem;
+  background-color: #4c9d42;
+  color: #ffff;
+  border-radius: 0.2rem;
+}
+#app .header .text-black .zhi {
+  font-size: 0.3rem;
+  width: 3.4rem;
+  text-align: center;
+  line-height: 0.8rem;
+  background-color: gray;
+  color: #ffff;
+  border-radius: 0.2rem;
+}
+#app .tishi {
+  width: 90%;
+  height: 4rem;
+  margin: 0 auto;
+}
+#app .tishi .black {
+  height: 1.4rem;
+}
+#app .tishi .kuang {
+  font-size: 0.28rem;
+}
+#app .tishi .kuang p {
+  color: red;
+}
+#app .tishi .kuang span {
+  font-size: 0.32rem;
+  font-weight: 700;
+}
+

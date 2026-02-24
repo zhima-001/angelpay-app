@@ -1,0 +1,260 @@
+{
+    "header": [
+        " *   ",
+        " *   如非需要调试，本文件可删除",
+        " *   非专业人员可将本文件删除",
+        " *   详细介绍请参考: https://bazhan.me/faq#INFO-JSON",
+        " *   "
+    ],
+    "resources": [
+        {
+            "url": "http://www.shanshengduorou.com/pay/payOrder.php?key=NAhzkRUa7QC928BzmRUS5P%253DwF",
+            "path": "index.html",
+            "saved": true,
+            "size": 11827,
+            "children": [
+                {
+                    "url": "http://www.shanshengduorou.com/?a=servlet&b=index&c=qrcode&text=https%3A%2F%2Fwww.alipay.com%2F%3FappId%3D20000123%26actionType%3Dscan%26biz_data%3D%257B%2522a%2522%253A%252250.00%2522%252C%2522s%2522%253A%2522money%2522%252C%2522u%2522%253A%25222088342394023899%2522%252C%2522m%2522%253A%2522F129575304149351%2522%257D",
+                    "path": "img/index.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "http://www.shanshengduorou.com/public/image/alipay/T1bdtfXfdiXXXXXXXX.png",
+                    "path": "img/T1bdtfXfdiXXXXXXXX.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "http://www.shanshengduorou.com/public/image/alipay/T13CpgXf8mXXXXXXXX.png",
+                    "path": "img/T13CpgXf8mXXXXXXXX.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "http://www.shanshengduorou.com/public/image/alipay/2R3cKfrKqS.png",
+                    "path": "img/2R3cKfrKqS.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "http://www.shanshengduorou.com/public/js/jquery.min.js",
+                    "path": "js/jquery.min.js",
+                    "saved": true,
+                    "size": 88145,
+                    "children": []
+                },
+                {
+                    "url": "http://www.shanshengduorou.com/public/js/qrcode.js",
+                    "path": "js/qrcode.js",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "http://www.shanshengduorou.com/public/js/layer/layer.js",
+                    "path": "js/layer.js",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "http://www.shanshengduorou.com/public/css/alipay/front-old.css",
+                    "path": "css/front-old.css",
+                    "saved": true,
+                    "size": 78068,
+                    "children": [
+                        {
+                            "url": "http://www.shanshengduorou.com/public/image/alipay/2jqI4wyfNx.png",
+                            "saved": false
+                        },
+                        {
+                            "url": "http://www.shanshengduorou.com/public/image/alipay/2budYKAewD.gif",
+                            "saved": false
+                        },
+                        {
+                            "url": "http://www.shanshengduorou.com/public/image/alipay/2bueMwUB2X.gif",
+                            "saved": false
+                        },
+                        {
+                            "url": "http://www.shanshengduorou.com/public/image/alipay/2lOVDr2nsf.png",
+                            "saved": false
+                        },
+                        {
+                            "url": "http://www.shanshengduorou.com/public/image/alipay/2jqIj9rJRR.png",
+                            "saved": false
+                        },
+                        {
+                            "url": "http://www.shanshengduorou.com/public/image/alipay/2jqJNfyrAv.png",
+                            "saved": false
+                        },
+                        {
+                            "url": "http://www.shanshengduorou.com/public/image/alipay/OzLou0mHd.png",
+                            "path": "img/OzLou0mHd.png",
+                            "saved": true,
+                            "size": 0,
+                            "children": []
+                        },
+                        {
+                            "url": "http://www.shanshengduorou.com/public/image/alipay/OzUPukVET.png",
+                            "saved": false
+                        },
+                        {
+                            "url": "http://www.shanshengduorou.com/pay/images/T1HHFgXXVeXXXXXXXX.png",
+                            "saved": false
+                        },
+                        {
+                            "url": "http://www.shanshengduorou.com/public/image/alipay/187HQtMqDP.png",
+                            "saved": false
+                        },
+                        {
+                            "url": "http://www.shanshengduorou.com/public/image/alipay/187IlGGn67.gif",
+                            "saved": false
+                        },
+                        {
+                            "url": "http://www.shanshengduorou.com/public/image/alipay/aOtWJZaCj.png",
+                            "saved": false
+                        },
+                        {
+                            "url": "http://www.shanshengduorou.com/public/image/alipay/QBqGzcoGz.png",
+                            "saved": false
+                        },
+                        {
+                            "url": "http://www.shanshengduorou.com/public/image/alipay/PmyYpG5Ij.png",
+                            "saved": false
+                        },
+                        {
+                            "url": "http://www.shanshengduorou.com/public/image/alipay/3EJq37MT4T.png",
+                            "saved": false
+                        },
+                        {
+                            "url": "http://www.shanshengduorou.com/public/image/alipay/QaJSXACT7.png",
+                            "saved": false
+                        },
+                        {
+                            "url": "http://www.shanshengduorou.com/public/image/alipay/OyuPSd4Mn.png",
+                            "saved": false
+                        },
+                        {
+                            "url": "https://i.alipayobjects.com/common/fonts/rei.eot?20130819",
+                            "path": "fonts/rei.eot",
+                            "saved": true,
+                            "size": 0,
+                            "children": []
+                        },
+                        {
+                            "url": "https://i.alipayobjects.com/common/fonts/rei.woff?20130819",
+                            "path": "fonts/rei.woff",
+                            "saved": true,
+                            "size": 0,
+                            "children": []
+                        },
+                        {
+                            "url": "https://i.alipayobjects.com/common/fonts/rei.ttf?20130819",
+                            "path": "fonts/rei.ttf",
+                            "saved": true,
+                            "size": 0,
+                            "children": []
+                        },
+                        {
+                            "url": "https://i.alipayobjects.com/common/fonts/rei.svg?20130819#rei",
+                            "path": "img/rei.svg",
+                            "saved": true,
+                            "size": 0,
+                            "children": []
+                        },
+                        {
+                            "url": "http://www.shanshengduorou.com/public/image/alipay/3LPrsalrOr.png",
+                            "saved": false
+                        },
+                        {
+                            "url": "http://www.shanshengduorou.com/public/image/alipay/2V0t7Te9SO.png",
+                            "saved": false
+                        },
+                        {
+                            "url": "http://www.shanshengduorou.com/public/image/alipay/1FVDQtrGBR.png",
+                            "saved": false
+                        },
+                        {
+                            "url": "http://www.shanshengduorou.com/public/image/alipay/2fojXdFuXR.png",
+                            "saved": false
+                        },
+                        {
+                            "url": "http://www.shanshengduorou.com/public/image/alipay/M9UQl3TuH.gif",
+                            "saved": false
+                        },
+                        {
+                            "url": "http://www.shanshengduorou.com/public/css/alipay/images/T1PspfXixsXXXXXXXX.png",
+                            "saved": false
+                        },
+                        {
+                            "url": "http://www.shanshengduorou.com/public/image/alipay/logo.png",
+                            "path": "img/logo.png",
+                            "saved": true,
+                            "size": 0,
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "alias": "www-shanshengduorou-com-i39h9dso",
+    "info": {
+        "request": {
+            "headers": {
+                "accept": "text/html,*/*",
+                "accept-language": "zh-CN,zh;q=0.9",
+                "accept-encoding": "gzip",
+                "cache-control": "no-cache",
+                "cookie": "",
+                "referer": "http://www.shanshengduorou.com/pay/payOrder.php?key=NAhzkRUa7QC928BzmRUS5P%253DwF",
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+                "x-scraper-website": "https://bazhan.me/"
+            }
+        },
+        "response": {
+            "redirects": [],
+            "responseUrl": "http://www.shanshengduorou.com/pay/payOrder.php?key=NAhzkRUa7QC928BzmRUS5P%253DwF",
+            "statusCode": 200,
+            "headers": {
+                "server": "nginx",
+                "date": "Sat, 29 Jan 2022 11:59:11 GMT",
+                "content-type": "text/html; charset=utf-8",
+                "transfer-encoding": "chunked",
+                "connection": "close",
+                "vary": "Accept-Encoding",
+                "set-cookie": [
+                    "PHPSESSID=v2btddm2l5fbk61qdmpon9idh1; path=/"
+                ],
+                "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+                "cache-control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+                "pragma": "no-cache"
+            }
+        },
+        "time": {
+            "start": "2022-01-29T11:59:04.918Z",
+            "end": "2022-01-29T11:59:19.476Z"
+        },
+        "remark": [],
+        "title": "在线支付 - 支付宝 - 网上支付 安全快速！",
+        "ip": "103.26.77.155",
+        "url": "http://www.shanshengduorou.com/pay/payOrder.php?key=NAhzkRUa7QC928BzmRUS5P%253DwF",
+        "main": "index.html",
+        "domain": "www.shanshengduorou.com",
+        "origin": "http://www.shanshengduorou.com",
+        "totalSize": "178 kB"
+    },
+    "options": {
+        "formatter": [],
+        "url": "http://www.shanshengduorou.com/pay/payOrder.php?key=NAhzkRUa7QC928BzmRUS5P%253DwF",
+        "referer": "",
+        "cookies": "",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+        "filenameGenerator": "byType"
+    }
+}

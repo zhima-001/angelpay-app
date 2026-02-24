@@ -1,0 +1,13 @@
+.git
+.github
+.gitignore
+.idea
+.vscode
+*.md
+*.log
+*.sw*
+.skeema
+docker-compose*.yml
+.env
+.user.ini
+budanuploads/

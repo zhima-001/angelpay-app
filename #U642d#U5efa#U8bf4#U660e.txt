@@ -1,0 +1,10 @@
+环境要求：
+apache或nginx + php5.6 + mysql
+
+
+程序上传到服务器，添加网站，运行 网址/install 安装程序。
+
+管理员
+
+网址/admin/login.php    帐号密码安装设置。
+

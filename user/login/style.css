@@ -1,0 +1,24 @@
+@charset "utf-8";
+/*
+ 
+
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+.col-sm-4{float:left;width:33.33333333%;padding:10px}
+/*背景*/
+.bg-white{background-color:#ffffff}
+.developer-train-block{max-width:1200px;text-align:center;padding:50px 0;clear:both;margin:0 auto}
+/*大标题*/
+.titleBar{text-align:center}
+.titleBar .caption{font-size:36px;color:#252b3a;letter-spacing:0;text-align:center;line-height:46px;margin-bottom:10px}
+.descript{margin-bottom:40px;font-size:16px;color:#A0A2A8}
+/*内容*/
+.developer-train .tile{position:relative;background:#FFFFFF;height:240px;box-shadow:0 8px 16px 0 rgba(0,0,0,0.10);border-radius:12px}
+.developer-train .layer-figure{border-radius: 12px;text-align:center;font-size:18px;color:#252b3a;height:79px;background:url("../img/trainblock.png") no-repeat center}
+.developer-train .title{border-radius: 12px 12px 0px 0px;line-height:79px;border-bottom:1px solid #ddd;color:#252b3a;font-size:18px;background-color: #797676;}
+.developer-train .dev-text{text-align:center;margin:30px 30px 0;font-size:12px;color:#A0A2A8}
+/*按钮*/
+.developer-train .buttond{position:absolute;bottom:30px;right:35.842%;text-align:center;margin:auto;width:100px;height:32px;border:1px solid #f66f6a;font-size:14px;color:#f66f6a}
+.developer-train .buttond p{line-height:30px;color:#f66f6a}
+.developer-train .buttond:hover{background-color:#f66f6a;border:none;cursor:pointer}
+.developer-train .buttond:hover a p{color:#fff}

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>收益面板</title>
+    <style>
+        /* 全局样式设置 */
+        body {
+            font-family: Arial, sans-serif; /* 设置全局字体 */
+            margin: 0; /* 移除默认外边距 */
+            padding: 20px; /* 设置全局内边距 */
+            background-color: #f5f5f5; /* 设置背景颜色 */
+            box-sizing: border-box; /* 设置盒模型 */
+        }
+
+        /* 容器样式 */
+        .container {
+            width: 100%; /* 容器宽度为100% */
+            max-width: 1200px; /* 最大宽度限制 */
+            margin: 0 auto; /* 水平居中 */
+            background-color: #fff; /* 背景为白色 */
+            border-radius: 8px; /* 圆角边框 */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 轻微阴影效果 */
+            padding: 20px; /* 内边距 */
+        }
+
+        /* 标题样式 */
+        .header {
+            font-size: 24px; /* 字体大小 */
+            color: #333; /* 字体颜色 */
+            margin-bottom: 20px; /* 下边距 */
+            text-align: center; /* 居中对齐 */
+        }
+
+        /* 各统计部分的样式 */
+        .section {
+            margin-bottom: 30px; /* 下边距 */
+        }
+
+        /* 各统计部分标题样式 */
+        .section h2 {
+            font-size: 20px; /* 字体大小 */
+            color: #555; /* 字体颜色 */
+            margin-bottom: 15px; /* 下边距 */
+            border-bottom: 2px solid #eee; /* 底部边框 */
+            padding-bottom: 5px; /* 内边距 */
+        }
+
+        /* 网格布局样式 */
+        .grid {
+            display: grid; /* 使用网格布局 */
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* 自动填充列，最小宽度180px */
+            gap: 15px; /* 网格间隙 */
+        }
+
+        /* 网格项样式 */
+        .grid-item {
+            background-color: #333; /* 背景颜色 */
+            color: #fff; /* 字体颜色 */
+            padding: 15px; /* 内边距 */
+            border-radius: 5px; /* 圆角边框 */
+            display: flex; /* 使用弹性布局 */
+            flex-direction: column; /* 垂直排列 */
+            justify-content: center; /* 垂直居中 */
+            align-items: center; /* 水平居中 */
+            transition: background-color 0.3s; /* 背景颜色过渡效果 */
+        }
+
+        /* 网格项悬停效果 */
+        .grid-item:hover {
+            background-color: #444; /* 悬停时改变背景颜色 */
+        }
+
+        /* 网格项中的主要数字样式 */
+        .grid-item span {
+            font-size: 18px; /* 字体大小 */
+            font-weight: bold; /* 字体加粗 */
+        }
+
+        /* 网格项中的说明文字样式 */
+        .grid-item small {
+            font-size: 14px; /* 字体大小 */
+            color: #ccc; /* 字体颜色 */
+        }
+
+        /* 响应式设计：中等屏幕设备 */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* 调整列的最小宽度 */
+            }
+
+            .grid-item span {
+                font-size: 16px; /* 调整字体大小 */
+            }
+
+            .grid-item small {
+                font-size: 12px; /* 调整字体大小 */
+            }
+        }
+
+        /* 响应式设计：小屏幕设备 */
+        @media (max-width: 480px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr); /* 两列布局 */
+            }
+
+            .grid-item {
+                font-size: 14px; /* 调整字体大小 */
+                padding: 10px; /* 调整内边距 */
+            }
+
+            .grid-item span {
+                font-size: 14px; /* 调整字体大小 */
+            }
+
+            .grid-item small {
+                font-size: 12px; /* 调整字体大小 */
+            }
+        }
+    </style>
+    <script>
+        // 等待文档内容加载完成后执行
+        document.addEventListener("DOMContentLoaded", function() {
+            // 从 URL 中获取 usertoken 参数
+            const userToken = new URLSearchParams(window.location.search).get('usertoken');
+
+            // 校验是否带有 usertoken，如果没有则提示错误并停止执行
+            if (!userToken) {
+                alert("无效访问：缺少用户令牌！");
+                return;
+            }
+
+            // 使用 Fetch API 发送 GET 请求到 data.php，携带 usertoken 参数
+            fetch(`data.php?usertoken=${encodeURIComponent(userToken)}`)
+                .then(response => {
+                    // 检查响应是否成功
+                    if (!response.ok) {
+                        throw new Error("数据加载失败，请检查网络或用户令牌！");
+                    }
+                    return response.json(); // 解析响应为 JSON
+                })
+                .then(data => {
+                    // 检查返回的状态是否为 success
+                    if (data.status !== "success") {
+                        alert(data.message || "数据获取失败！");
+                        return;
+                    }
+
+                    // 定义需要填充数据的元素的 ID 与对应的 JSON 键名
+                    const elements = {
+                        // 今日统计
+                        "today_orders": document.getElementById("today_orders"),
+                        "today_payments": document.getElementById("today_payments"),
+                        "today_recharge": document.getElementById("today_recharge"),
+                        "today_received": document.getElementById("today_received"),
+                        "today_alipay": document.getElementById("today_alipay"),
+                        "today_wechat": document.getElementById("today_wechat"),
+
+                        // 昨日统计
+                        "yesterday_orders": document.getElementById("yesterday_orders"),
+                        "yesterday_payments": document.getElementById("yesterday_payments"),
+                        "yesterday_recharge": document.getElementById("yesterday_recharge"),
+                        "yesterday_alipay": document.getElementById("yesterday_alipay"),
+                        "yesterday_wechat": document.getElementById("yesterday_wechat"),
+
+                        // 本月统计
+                        "month_orders": document.getElementById("month_orders"),
+                        "month_payments": document.getElementById("month_payments"),
+                        "month_recharge": document.getElementById("month_recharge"),
+                        "month_alipay": document.getElementById("month_alipay"),
+                        "month_wechat": document.getElementById("month_wechat"),
+
+                        // 上月统计
+                        "last_month_orders": document.getElementById("last_month_orders"),
+                        "last_month_payments": document.getElementById("last_month_payments"),
+                        "last_month_recharge": document.getElementById("last_month_recharge"),
+                        "last_month_alipay": document.getElementById("last_month_alipay"),
+                        "last_month_wechat": document.getElementById("last_month_wechat"),
+
+                        // 其他统计
+                        "total_recharge": document.getElementById("total_recharge"),
+                        "complaints": document.getElementById("complaints"),
+                        "withdrawals": document.getElementById("withdrawals"),
+                        "todaypay": document.getElementById("todaypay"),
+                    };
+
+                    // 遍历每个需要填充的元素，并将对应的数据赋值给元素的 textContent
+                    for (const key in elements) {
+                        if (elements[key] && data[key]) {
+                            elements[key].textContent = data[key];
+                        }
+                    }
+                })
+                .catch(error => {
+                    // 捕获并处理任何错误
+                    console.error(error);
+                    alert("加载数据时出错，请稍后重试！");
+                });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- 页面标题 -->
+        <div class="header">收益面板</div>
+
+        <!-- 今日统计部分 -->
+        <div class="section">
+            <h2>今日统计</h2>
+            <div class="grid">
+                <!-- 今日总订单 -->
+                <div class="grid-item">
+                    <span id="today_orders">--</span>
+                    <small>今日总订单</small>
+                </div>
+                <!-- 今日付款订单 -->
+                <div class="grid-item">
+                    <span id="today_payments">--</span>
+                    <small>今日付款订单</small>
+                </div>
+                <!-- 今日总充值 -->
+                <div class="grid-item">
+                    <span id="today_recharge">--</span>
+                    <small>今日总充值</small>
+                </div>
+                <!-- 今日支付宝金额 -->
+                <div class="grid-item">
+                    <span id="today_alipay">--</span>
+                    <small>今日支付宝金额</small>
+                </div>
+                <!-- 今日微信金额 -->
+                <div class="grid-item">
+                    <span id="today_wechat">--</span>
+                    <small>今日微信金额</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- 昨日统计部分 -->
+        <div class="section">
+            <h2>昨日统计</h2>
+            <div class="grid">
+                <!-- 昨日总订单 -->
+                <div class="grid-item">
+                    <span id="yesterday_orders">--</span>
+                    <small>昨日总订单</small>
+                </div>
+                <!-- 昨日付款订单 -->
+                <div class="grid-item">
+                    <span id="yesterday_payments">--</span>
+                    <small>昨日付款订单</small>
+                </div>
+                <!-- 昨日总充值 -->
+                <div class="grid-item">
+                    <span id="yesterday_recharge">--</span>
+                    <small>昨日总充值</small>
+                </div>
+                <!-- 昨日支付宝金额 -->
+                <div class="grid-item">
+                    <span id="yesterday_alipay">--</span>
+                    <small>昨日支付宝金额</small>
+                </div>
+                <!-- 昨日微信金额 -->
+                <div class="grid-item">
+                    <span id="yesterday_wechat">--</span>
+                    <small>昨日微信金额</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- 本月统计部分 -->
+        <div class="section">
+            <h2>本月统计</h2>
+            <div class="grid">
+                <!-- 本月总订单 -->
+                <div class="grid-item">
+                    <span id="month_orders">--</span>
+                    <small>本月总订单</small>
+                </div>
+                <!-- 本月付款订单 -->
+                <div class="grid-item">
+                    <span id="month_payments">--</span>
+                    <small>本月付款订单</small>
+                </div>
+                <!-- 本月总充值 -->
+                <div class="grid-item">
+                    <span id="month_recharge">--</span>
+                    <small>本月总充值</small>
+                </div>
+                <!-- 本月支付宝金额 -->
+                <div class="grid-item">
+                    <span id="month_alipay">--</span>
+                    <small>本月支付宝金额</small>
+                </div>
+                <!-- 本月微信金额 -->
+                <div class="grid-item">
+                    <span id="month_wechat">--</span>
+                    <small>本月微信金额</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- 上月统计部分 -->
+        <div class="section">
+            <h2>上月统计</h2>
+            <div class="grid">
+                <!-- 上月总订单 -->
+                <div class="grid-item">
+                    <span id="last_month_orders">--</span>
+                    <small>上月总订单</small>
+                </div>
+                <!-- 上月付款订单 -->
+                <div class="grid-item">
+                    <span id="last_month_payments">--</span>
+                    <small>上月付款订单</small>
+                </div>
+                <!-- 上月总充值 -->
+                <div class="grid-item">
+                    <span id="last_month_recharge">--</span>
+                    <small>上月总充值</small>
+                </div>
+                <!-- 上月支付宝金额 -->
+                <div class="grid-item">
+                    <span id="last_month_alipay">--</span>
+                    <small>上月支付宝金额</small>
+                </div>
+                <!-- 上月微信金额 -->
+                <div class="grid-item">
+                    <span id="last_month_wechat">--</span>
+                    <small>上月微信金额</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- 其他统计部分 -->
+        <div class="section">
+            <h2>其他统计</h2>
+            <div class="grid">
+                <!-- 总投诉金额 -->
+                <div class="grid-item">
+                    <span id="complaints">--</span>
+                    <small>账户投诉金额</small>
+                </div>
+                <!-- 今日下发金额 -->
+                <div class="grid-item">
+                    <span id="todaypay">--</span>
+                    <small>今日下发金额</small>
+                </div>
+                <!-- 账户提现余额 -->
+                <div class="grid-item">
+                    <span id="withdrawals">--</span>
+                    <small>账户提现余额</small>
+                </div>
+                <!-- 总充值金额 -->
+                <div class="grid-item">
+                    <span id="total_recharge">--</span>
+                    <small>总充值金额</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

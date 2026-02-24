@@ -1,0 +1,1245 @@
+Array
+(
+    [_id] => iqCqzRNNgkDeLXGEo
+    [label] => 游客来电-->随机数:388
+    [createdAt] => 2024-09-14T03:19:03.183Z
+    [lastMessageAt] => 2024-10-16T00:50:56.121Z
+    [visitor] => Array
+        (
+            [_id] => 66dec13143ae56d4d6d1588f
+            [token] => 8fc4d7a1b97d069f7f21bfe63ff3226bc5f303f69559f5292d55c2fe7d4292ad
+            [name] => 游客来电--用户TGLTEMDIM6OTUMQ
+            [username] => guest-4
+            [department] => 66dec0ef43ae56d4d6d1588d
+            [email] => Array
+                (
+                    [0] => Array
+                        (
+                            [address] => visitor@example.com
+                        )
+
+                )
+
+            [phone] => Array
+                (
+                    [0] => Array
+                        (
+                            [phoneNumber] => 2312123123
+                        )
+
+                    [1] => Array
+                        (
+                            [phoneNumber] => 13123123
+                        )
+
+                )
+
+        )
+
+    [agent] => Array
+        (
+            [_id] => rjgcf3CnC3HZ3RMFy
+            [username] => ma
+            [name] => zhima
+            [email] => makij98629@coloruz.com
+        )
+
+    [crmData] => 
+string(900) "{"_id":"iqCqzRNNgkDeLXGEo","label":"游客来电-->随机数:388","createdAt":"2024-09-14T03:19:03.183Z","lastMessageAt":"2024-09-14T03:19:03.241Z","visitor":{"_id":"66dec13143ae56d4d6d1588f","token":"8fc4d7a1b97d069f7f21bfe63ff3226bc5f303f69559f5292d55c2fe7d4292ad","name":"游客来电--用户TGLTEMDIM6OTUMQ","username":"guest-4","department":"66dec0ef43ae56d4d6d1588d","email":[{"address":"visitor@example.com"}],"phone":[{"phoneNumber":"2312123123"},{"phoneNumber":"13123123"}]},"agent":{"_id":"rjgcf3CnC3HZ3RMFy","username":"ma","name":"zhima","email":"makij98629@coloruz.com"},"crmData":"\n{\"status\":\"success\"}","type":"Message","messages":[{"u":{"_id":"rjgcf3CnC3HZ3RMFy","username":"ma","name":"zhima"},"_id":"C3kr4hSW843MFaPmd","username":"ma","msg":"111","ts":"2024-10-16T00:50:56.121Z","rid":"iqCqzRNNgkDeLXGEo","agentId":"rjgcf3CnC3HZ3RMFy","_updatedAt":"2024-10-16T00:50:56.226Z"}]}"
+
+    [type] => LivechatSession
+    [messages] => Array
+        (
+            [0] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => rjgcf3CnC3HZ3RMFy
+                            [username] => ma
+                            [name] => zhima
+                        )
+
+                    [_id] => C3kr4hSW843MFaPmd
+                    [username] => ma
+                    [msg] => 111
+                    [ts] => 2024-10-16T00:50:56.121Z
+                    [rid] => iqCqzRNNgkDeLXGEo
+                    [agentId] => rjgcf3CnC3HZ3RMFy
+                    [_updatedAt] => 2024-10-16T00:50:56.226Z
+                )
+
+            [1] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => rjgcf3CnC3HZ3RMFy
+                            [username] => ma
+                        )
+
+                    [_id] => 672035a64512925822c794a4
+                    [username] => ma
+                    [msg] => 1
+                    [ts] => 2024-10-29T01:08:54.889Z
+                    [rid] => iqCqzRNNgkDeLXGEo
+                    [agentId] => rjgcf3CnC3HZ3RMFy
+                    [closingMessage] => 1
+                    [_updatedAt] => 2024-10-29T01:08:54.889Z
+                )
+
+        )
+
+    [departmentId] => 66dec0ef43ae56d4d6d1588d
+    [servedBy] => Array
+        (
+            [_id] => rjgcf3CnC3HZ3RMFy
+            [username] => ma
+            [ts] => 2024-09-14T03:19:03.325Z
+        )
+
+    [closedAt] => 2024-10-29T01:08:54.788Z
+    [closedBy] => Array
+        (
+            [_id] => rjgcf3CnC3HZ3RMFy
+            [username] => ma
+        )
+
+    [closer] => user
+)
+Array
+(
+    [_id] => LLWoz4ThYLfDjPdbe
+    [label] => 游客来电-->随机数:579
+    [createdAt] => 2024-09-14T03:48:49.496Z
+    [lastMessageAt] => 2024-10-15T07:46:22.378Z
+    [visitor] => Array
+        (
+            [_id] => 66dec13143ae56d4d6d1588f
+            [token] => 8fc4d7a1b97d069f7f21bfe63ff3226bc5f303f69559f5292d55c2fe7d4292ad
+            [name] => 游客来电--用户TGLTEMDIM6OTUMQ
+            [username] => guest-4
+            [department] => 66dec0ef43ae56d4d6d1588d
+            [email] => Array
+                (
+                    [0] => Array
+                        (
+                            [address] => visitor@example.com
+                        )
+
+                )
+
+            [phone] => Array
+                (
+                    [0] => Array
+                        (
+                            [phoneNumber] => 2312123123
+                        )
+
+                    [1] => Array
+                        (
+                            [phoneNumber] => 13123123
+                        )
+
+                )
+
+        )
+
+    [agent] => Array
+        (
+            [_id] => rjgcf3CnC3HZ3RMFy
+            [username] => ma
+            [name] => zhima
+            [email] => makij98629@coloruz.com
+        )
+
+    [crmData] => 
+{"status":"success"}
+    [type] => LivechatSession
+    [messages] => Array
+        (
+            [0] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => 66dec13143ae56d4d6d1588f
+                            [username] => guest-4
+                            [name] => 游客来电-->随机数:579
+                        )
+
+                    [_id] => Cm33Bb8WngsRqerwW
+                    [username] => guest-4
+                    [msg] => 呼叫24h客服
+                    [ts] => 2024-09-14T03:49:33.207Z
+                    [rid] => LLWoz4ThYLfDjPdbe
+                    [_updatedAt] => 2024-09-14T03:49:33.303Z
+                )
+
+            [1] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => rjgcf3CnC3HZ3RMFy
+                            [username] => ma
+                            [name] => zhima
+                        )
+
+                    [_id] => hGspYGRXTTiZfoBNp
+                    [username] => ma
+                    [msg] => xxx
+                    [ts] => 2024-10-15T07:42:43.646Z
+                    [rid] => LLWoz4ThYLfDjPdbe
+                    [agentId] => rjgcf3CnC3HZ3RMFy
+                    [_updatedAt] => 2024-10-15T07:42:43.744Z
+                )
+
+            [2] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => rjgcf3CnC3HZ3RMFy
+                            [username] => ma
+                            [name] => zhima
+                        )
+
+                    [_id] => R5drZQ2amk8vBKs5j
+                    [username] => ma
+                    [msg] => ssss
+                    [ts] => 2024-10-15T07:46:22.378Z
+                    [rid] => LLWoz4ThYLfDjPdbe
+                    [agentId] => rjgcf3CnC3HZ3RMFy
+                    [_updatedAt] => 2024-10-15T07:46:22.504Z
+                )
+
+            [3] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => rjgcf3CnC3HZ3RMFy
+                            [username] => ma
+                        )
+
+                    [_id] => 672035ad4512925822c794a9
+                    [username] => ma
+                    [msg] => 1
+                    [ts] => 2024-10-29T01:09:01.029Z
+                    [rid] => LLWoz4ThYLfDjPdbe
+                    [agentId] => rjgcf3CnC3HZ3RMFy
+                    [closingMessage] => 1
+                    [_updatedAt] => 2024-10-29T01:09:01.029Z
+                )
+
+        )
+
+    [departmentId] => 66dec0ef43ae56d4d6d1588d
+    [servedBy] => Array
+        (
+            [_id] => rjgcf3CnC3HZ3RMFy
+            [username] => ma
+            [ts] => 2024-09-14T03:48:49.670Z
+        )
+
+    [closedAt] => 2024-10-29T01:09:00.972Z
+    [closedBy] => Array
+        (
+            [_id] => rjgcf3CnC3HZ3RMFy
+            [username] => ma
+        )
+
+    [closer] => user
+)
+Array
+(
+    [_id] => iqCqzRNNgkDeLXGEo
+    [label] => 游客来电-->随机数:388
+    [createdAt] => 2024-09-14T03:19:03.183Z
+    [lastMessageAt] => 2024-10-29T01:08:54.889Z
+    [visitor] => Array
+        (
+            [_id] => 66dec13143ae56d4d6d1588f
+            [token] => 8fc4d7a1b97d069f7f21bfe63ff3226bc5f303f69559f5292d55c2fe7d4292ad
+            [name] => 游客来电--用户TGLTEMDIM6OTUMQ
+            [username] => guest-4
+            [department] => 66dec0ef43ae56d4d6d1588d
+            [email] => Array
+                (
+                    [0] => Array
+                        (
+                            [address] => visitor@example.com
+                        )
+
+                )
+
+            [phone] => Array
+                (
+                    [0] => Array
+                        (
+                            [phoneNumber] => 2312123123
+                        )
+
+                    [1] => Array
+                        (
+                            [phoneNumber] => 13123123
+                        )
+
+                )
+
+        )
+
+    [agent] => Array
+        (
+            [_id] => rjgcf3CnC3HZ3RMFy
+            [username] => ma
+            [name] => zhima
+            [email] => makij98629@coloruz.com
+        )
+
+    [crmData] => 
+{"status":"success"}
+    [type] => Message
+    [messages] => Array
+        (
+            [0] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => rocket.cat
+                            [username] => rocket.cat
+                            [name] => Rocket.Cat
+                        )
+
+                    [_id] => X3JWdFLgBXQuJWTso
+                    [username] => rocket.cat
+                    [msg] => PDF Transcript successfully generated
+                    [ts] => 2024-10-29T01:09:01.062Z
+                    [rid] => iqCqzRNNgkDeLXGEo
+                    [agentId] => rocket.cat
+                    [file] => Array
+                        (
+                            [_id] => 672035ac4512925822c794a6
+                            [name] => 紀錄_芝麻集团_10/29/2024_游客来电--用户TGLTEMDIM6OTUMQ.pdf
+                            [type] => application/pdf
+                            [size] => 12957
+                            [format] => 
+                        )
+
+                    [attachments] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ts] => 1970-01-01T00:00:00.000Z
+                                    [title] => 紀錄_芝麻集团_10/29/2024_游客来电--用户TGLTEMDIM6OTUMQ.pdf
+                                    [title_link] => /file-upload/672035ac4512925822c794a6/%E7%B4%80%E9%8C%84_%E8%8A%9D%E9%BA%BB%E9%9B%86%E5%9B%A2_10/29/2024_%E6%B8%B8%E5%AE%A2%E6%9D%A5%E7%94%B5--%E7%94%A8%E6%88%B7TGLTEMDIM6OTUMQ.pdf
+                                    [title_link_download] => 1
+                                    [type] => file
+                                    [format] => PDF
+                                    [size] => 12957
+                                )
+
+                        )
+
+                    [fileUpload] => Array
+                        (
+                            [publicFilePath] => https://ccc.zmchat.xyz/file-upload/672035ac4512925822c794a6/%E7%B4%80%E9%8C%84_%E8%8A%9D%E9%BA%BB%E9%9B%86%E5%9B%A2_10/29/2024_%E6%B8%B8%E5%AE%A2%E6%9D%A5%E7%94%B5--%E7%94%A8%E6%88%B7TGLTEMDIM6OTUMQ.pdf
+                            [type] => application/pdf
+                            [size] => 12957
+                        )
+
+                    [_updatedAt] => 2024-10-29T01:09:01.368Z
+                )
+
+        )
+
+)
+Array
+(
+    [_id] => HxFiwsmqc7LLGT2iJ
+    [label] => 5555
+    [createdAt] => 2024-09-14T03:34:21.124Z
+    [lastMessageAt] => 2024-10-15T07:42:46.531Z
+    [visitor] => Array
+        (
+            [_id] => 66e5042943ae56d4d6d158fc
+            [token] => 717f2b0c70669af0f25a842c153307e13c5fa5428c08ce26ddc33c36952640f2
+            [name] => 5555
+            [username] => guest-5
+            [email] => Array
+                (
+                    [0] => Array
+                        (
+                            [address] => xrrwrgfe@gmail.com
+                        )
+
+                )
+
+        )
+
+    [agent] => Array
+        (
+            [_id] => rjgcf3CnC3HZ3RMFy
+            [username] => ma
+            [name] => zhima
+            [email] => makij98629@coloruz.com
+        )
+
+    [crmData] => 
+{"status":"success"}
+    [type] => LivechatSession
+    [messages] => Array
+        (
+            [0] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => 66e5042943ae56d4d6d158fc
+                            [username] => guest-5
+                            [name] => 5555
+                        )
+
+                    [_id] => CxGsGEtK72ZexiseX
+                    [username] => guest-5
+                    [msg] => 55555
+                    [ts] => 2024-09-14T03:34:22.281Z
+                    [rid] => HxFiwsmqc7LLGT2iJ
+                    [_updatedAt] => 2024-09-14T03:34:22.340Z
+                )
+
+            [1] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => 66e5042943ae56d4d6d158fc
+                            [username] => guest-5
+                            [name] => 5555
+                        )
+
+                    [_id] => A98rns7KPgiprx67Y
+                    [username] => guest-5
+                    [msg] => wqweFesarg
+                    [ts] => 2024-09-14T03:42:46.142Z
+                    [rid] => HxFiwsmqc7LLGT2iJ
+                    [_updatedAt] => 2024-09-14T03:42:46.180Z
+                )
+
+            [2] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => 66e5042943ae56d4d6d158fc
+                            [username] => guest-5
+                            [name] => 5555
+                        )
+
+                    [_id] => pCcWf7pPPNcGC8v2o
+                    [username] => guest-5
+                    [msg] => dfaefaerf
+                    [ts] => 2024-09-14T03:51:46.089Z
+                    [rid] => HxFiwsmqc7LLGT2iJ
+                    [_updatedAt] => 2024-09-14T03:51:46.147Z
+                )
+
+            [3] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => rjgcf3CnC3HZ3RMFy
+                            [username] => ma
+                            [name] => zhima
+                        )
+
+                    [_id] => WEPBbMCGr22FBABSt
+                    [username] => ma
+                    [msg] => 222
+                    [ts] => 2024-10-15T07:42:46.531Z
+                    [rid] => HxFiwsmqc7LLGT2iJ
+                    [agentId] => rjgcf3CnC3HZ3RMFy
+                    [_updatedAt] => 2024-10-15T07:42:46.587Z
+                )
+
+            [4] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => rjgcf3CnC3HZ3RMFy
+                            [username] => ma
+                        )
+
+                    [_id] => 672035b24512925822c794ac
+                    [username] => ma
+                    [msg] => 2
+                    [ts] => 2024-10-29T01:09:06.961Z
+                    [rid] => HxFiwsmqc7LLGT2iJ
+                    [agentId] => rjgcf3CnC3HZ3RMFy
+                    [closingMessage] => 1
+                    [_updatedAt] => 2024-10-29T01:09:06.961Z
+                )
+
+        )
+
+    [servedBy] => Array
+        (
+            [_id] => rjgcf3CnC3HZ3RMFy
+            [username] => ma
+            [ts] => 2024-09-14T03:34:21.276Z
+        )
+
+    [closedAt] => 2024-10-29T01:09:06.930Z
+    [closedBy] => Array
+        (
+            [_id] => rjgcf3CnC3HZ3RMFy
+            [username] => ma
+        )
+
+    [closer] => user
+)
+Array
+(
+    [_id] => 5kg5DNPkou2HPbo3s
+    [label] => 游客来电-->随机数:945
+    [createdAt] => 2024-09-14T03:02:25.405Z
+    [lastMessageAt] => 2024-09-14T03:02:33.298Z
+    [visitor] => Array
+        (
+            [_id] => 66dec13143ae56d4d6d1588f
+            [token] => 8fc4d7a1b97d069f7f21bfe63ff3226bc5f303f69559f5292d55c2fe7d4292ad
+            [name] => 游客来电--用户TGLTEMDIM6OTUMQ
+            [username] => guest-4
+            [department] => 66dec0ef43ae56d4d6d1588d
+            [email] => Array
+                (
+                    [0] => Array
+                        (
+                            [address] => visitor@example.com
+                        )
+
+                )
+
+            [phone] => Array
+                (
+                    [0] => Array
+                        (
+                            [phoneNumber] => 2312123123
+                        )
+
+                    [1] => Array
+                        (
+                            [phoneNumber] => 13123123
+                        )
+
+                )
+
+        )
+
+    [agent] => Array
+        (
+            [_id] => rjgcf3CnC3HZ3RMFy
+            [username] => ma
+            [name] => zhima
+            [email] => makij98629@coloruz.com
+        )
+
+    [crmData] => 
+{"status":"success"}
+    [type] => LivechatSession
+    [messages] => Array
+        (
+            [0] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => 66dec13143ae56d4d6d1588f
+                            [username] => guest-4
+                            [name] => 游客来电-->随机数:945
+                        )
+
+                    [_id] => Lwy8qzbYSoqKoQrjy
+                    [username] => guest-4
+                    [msg] => 1111
+                    [ts] => 2024-09-14T03:02:28.870Z
+                    [rid] => 5kg5DNPkou2HPbo3s
+                    [_updatedAt] => 2024-09-14T03:02:28.922Z
+                )
+
+            [1] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => 66dec13143ae56d4d6d1588f
+                            [username] => guest-4
+                            [name] => 游客来电-->随机数:945
+                        )
+
+                    [_id] => vGCxTHX4uFCC3GyqW
+                    [username] => guest-4
+                    [msg] => 呼叫24h客服
+                    [ts] => 2024-09-14T03:02:33.298Z
+                    [rid] => 5kg5DNPkou2HPbo3s
+                    [_updatedAt] => 2024-09-14T03:02:33.331Z
+                )
+
+            [2] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => rjgcf3CnC3HZ3RMFy
+                            [username] => ma
+                        )
+
+                    [_id] => 672035b84512925822c794ad
+                    [username] => ma
+                    [msg] => 3
+                    [ts] => 2024-10-29T01:09:12.093Z
+                    [rid] => 5kg5DNPkou2HPbo3s
+                    [agentId] => rjgcf3CnC3HZ3RMFy
+                    [closingMessage] => 1
+                    [_updatedAt] => 2024-10-29T01:09:12.093Z
+                )
+
+        )
+
+    [departmentId] => 66dec0ef43ae56d4d6d1588d
+    [servedBy] => Array
+        (
+            [_id] => rjgcf3CnC3HZ3RMFy
+            [username] => ma
+            [ts] => 2024-09-14T03:02:25.539Z
+        )
+
+    [closedAt] => 2024-10-29T01:09:12.061Z
+    [closedBy] => Array
+        (
+            [_id] => rjgcf3CnC3HZ3RMFy
+            [username] => ma
+        )
+
+    [closer] => user
+)
+Array
+(
+    [_id] => pCNdjZtN4Sk4uLKMx
+    [label] => 游客来电-->随机数:434
+    [createdAt] => 2024-09-14T03:18:40.583Z
+    [lastMessageAt] => 2024-09-14T03:18:47.211Z
+    [visitor] => Array
+        (
+            [_id] => 66dec13143ae56d4d6d1588f
+            [token] => 8fc4d7a1b97d069f7f21bfe63ff3226bc5f303f69559f5292d55c2fe7d4292ad
+            [name] => 游客来电--用户TGLTEMDIM6OTUMQ
+            [username] => guest-4
+            [department] => 66dec0ef43ae56d4d6d1588d
+            [email] => Array
+                (
+                    [0] => Array
+                        (
+                            [address] => visitor@example.com
+                        )
+
+                )
+
+            [phone] => Array
+                (
+                    [0] => Array
+                        (
+                            [phoneNumber] => 2312123123
+                        )
+
+                    [1] => Array
+                        (
+                            [phoneNumber] => 13123123
+                        )
+
+                )
+
+        )
+
+    [agent] => Array
+        (
+            [_id] => rjgcf3CnC3HZ3RMFy
+            [username] => ma
+            [name] => zhima
+            [email] => makij98629@coloruz.com
+        )
+
+    [crmData] => 
+{"status":"success"}
+    [type] => LivechatSession
+    [messages] => Array
+        (
+            [0] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => 66dec13143ae56d4d6d1588f
+                            [username] => guest-4
+                            [name] => 游客来电-->随机数:434
+                        )
+
+                    [_id] => R5SpisHEaDvNEWdY7
+                    [username] => guest-4
+                    [msg] => 111
+                    [ts] => 2024-09-14T03:18:45.485Z
+                    [rid] => pCNdjZtN4Sk4uLKMx
+                    [_updatedAt] => 2024-09-14T03:18:45.532Z
+                )
+
+            [1] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => 66dec13143ae56d4d6d1588f
+                            [username] => guest-4
+                            [name] => 游客来电-->随机数:434
+                        )
+
+                    [_id] => hGccvFqP3AQvWRXdw
+                    [username] => guest-4
+                    [msg] => 呼叫24h客服
+                    [ts] => 2024-09-14T03:18:47.211Z
+                    [rid] => pCNdjZtN4Sk4uLKMx
+                    [_updatedAt] => 2024-09-14T03:18:47.273Z
+                )
+
+            [2] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => rjgcf3CnC3HZ3RMFy
+                            [username] => ma
+                        )
+
+                    [_id] => 672035f74512925822c794ae
+                    [username] => ma
+                    [msg] => 1
+                    [ts] => 2024-10-29T01:10:15.541Z
+                    [rid] => pCNdjZtN4Sk4uLKMx
+                    [agentId] => rjgcf3CnC3HZ3RMFy
+                    [closingMessage] => 1
+                    [_updatedAt] => 2024-10-29T01:10:15.541Z
+                )
+
+        )
+
+    [departmentId] => 66dec0ef43ae56d4d6d1588d
+    [servedBy] => Array
+        (
+            [_id] => rjgcf3CnC3HZ3RMFy
+            [username] => ma
+            [ts] => 2024-09-14T03:18:40.777Z
+        )
+
+    [closedAt] => 2024-10-29T01:10:15.502Z
+    [closedBy] => Array
+        (
+            [_id] => rjgcf3CnC3HZ3RMFy
+            [username] => ma
+        )
+
+    [closer] => user
+)
+Array
+(
+    [_id] => A3gjAHoePQPfpPB3f
+    [label] => 游客来电-->随机数:674
+    [createdAt] => 2024-09-14T01:02:31.080Z
+    [lastMessageAt] => 2024-09-14T01:04:37.680Z
+    [visitor] => Array
+        (
+            [_id] => 66dec13143ae56d4d6d1588f
+            [token] => 8fc4d7a1b97d069f7f21bfe63ff3226bc5f303f69559f5292d55c2fe7d4292ad
+            [name] => 游客来电--用户TGLTEMDIM6OTUMQ
+            [username] => guest-4
+            [department] => 66dec0ef43ae56d4d6d1588d
+            [email] => Array
+                (
+                    [0] => Array
+                        (
+                            [address] => visitor@example.com
+                        )
+
+                )
+
+            [phone] => Array
+                (
+                    [0] => Array
+                        (
+                            [phoneNumber] => 2312123123
+                        )
+
+                    [1] => Array
+                        (
+                            [phoneNumber] => 13123123
+                        )
+
+                )
+
+        )
+
+    [agent] => Array
+        (
+            [_id] => rjgcf3CnC3HZ3RMFy
+            [username] => ma
+            [name] => zhima
+            [email] => makij98629@coloruz.com
+        )
+
+    [crmData] => 
+{"status":"success"}
+    [type] => LivechatSession
+    [messages] => Array
+        (
+            [0] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => 66dec13143ae56d4d6d1588f
+                            [username] => guest-4
+                            [name] => 游客来电-->随机数:674
+                        )
+
+                    [_id] => H7v9Cwa8ZAXdiTrY2
+                    [username] => guest-4
+                    [ts] => 2024-09-14T01:02:58.228Z
+                    [rid] => A3gjAHoePQPfpPB3f
+                    [file] => Array
+                        (
+                            [_id] => 66e4e0c243ae56d4d6d158bc
+                            [name] => VZ0Loigqco.jpg
+                            [type] => image/jpeg
+                        )
+
+                    [attachments] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ts] => 1970-01-01T00:00:00.000Z
+                                    [title] => VZ0Loigqco.jpg
+                                    [title_link] => /file-upload/66e4e0c243ae56d4d6d158bc/VZ0Loigqco.jpg
+                                    [title_link_download] => 1
+                                    [image_dimensions] => Array
+                                        (
+                                            [width] => 1280
+                                            [height] => 959
+                                        )
+
+                                    [image_preview] => /9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAYACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMBAgQI/8QAJRAAAgECBgICAwAAAAAAAAAAAQIDAAQFERMhMUEGEpLRFEJR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAZEQEAAwEBAAAAAAAAAAAAAAAAAREhQXH/2gAMAwEAAhEDEQA/AOkHkaxj1Ly4Gmu5Y1lbybCQBldJn3sfqt9xElwmnMiuh5BGYpCYJhvtkbC3+FXOpEZhbeS4QqjK7TfnY/Vao76G4gae1bUiHBHdSMBwzuwt/hVooYrX2ht4kjiH6qNqeCSwVlY8Crx30bMwMbL6nYnuiirSWZ+bH/DSC4kkZhwaKKUW/9k=
+                                    [image_url] => /file-upload/66e4e0c243ae56d4d6d158bc/VZ0Loigqco.jpg
+                                    [image_type] => image/jpeg
+                                    [image_size] => 80181
+                                    [type] => file
+                                    [description] => 
+                                )
+
+                        )
+
+                    [fileUpload] => Array
+                        (
+                            [publicFilePath] => https://ccc.zmchat.xyz/file-upload/66e4e0c243ae56d4d6d158bc/VZ0Loigqco.jpg
+                            [type] => image/jpeg
+                            [size] => 80181
+                        )
+
+                    [_updatedAt] => 2024-09-14T01:02:58.287Z
+                )
+
+            [1] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => 66dec13143ae56d4d6d1588f
+                            [username] => guest-4
+                            [name] => 游客来电-->随机数:674
+                        )
+
+                    [_id] => fmp4vraz3YxuRGkMb
+                    [username] => guest-4
+                    [msg] => ![image](https://ccc.zmchat.xyz/)
+                    [ts] => 2024-09-14T01:03:00.830Z
+                    [rid] => A3gjAHoePQPfpPB3f
+                    [_updatedAt] => 2024-09-14T01:03:02.270Z
+                )
+
+            [2] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => 66dec13143ae56d4d6d1588f
+                            [username] => guest-4
+                            [name] => 游客来电-->随机数:674
+                        )
+
+                    [_id] => k5wMg2utpfk9E8HPY
+                    [username] => guest-4
+                    [msg] => 同一个客户再次联系是否新建会话
+                    [ts] => 2024-09-14T01:03:42.097Z
+                    [rid] => A3gjAHoePQPfpPB3f
+                    [_updatedAt] => 2024-09-14T01:03:42.159Z
+                )
+
+            [3] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => 66dec13143ae56d4d6d1588f
+                            [username] => guest-4
+                            [name] => 游客来电-->随机数:674
+                        )
+
+                    [_id] => zpCPWqsh6BCCtJAQ7
+                    [username] => guest-4
+                    [msg] => 2,发起会话是否需要点击呼叫客服
+                    [ts] => 2024-09-14T01:04:37.680Z
+                    [rid] => A3gjAHoePQPfpPB3f
+                    [_updatedAt] => 2024-09-14T01:04:37.735Z
+                )
+
+            [4] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => rjgcf3CnC3HZ3RMFy
+                            [username] => ma
+                        )
+
+                    [_id] => 672035fa4512925822c794af
+                    [username] => ma
+                    [msg] => 2
+                    [ts] => 2024-10-29T01:10:18.904Z
+                    [rid] => A3gjAHoePQPfpPB3f
+                    [agentId] => rjgcf3CnC3HZ3RMFy
+                    [closingMessage] => 1
+                    [_updatedAt] => 2024-10-29T01:10:18.904Z
+                )
+
+        )
+
+    [departmentId] => 66dec0ef43ae56d4d6d1588d
+    [servedBy] => Array
+        (
+            [_id] => rjgcf3CnC3HZ3RMFy
+            [username] => ma
+            [ts] => 2024-09-14T01:02:31.253Z
+        )
+
+    [closedAt] => 2024-10-29T01:10:18.869Z
+    [closedBy] => Array
+        (
+            [_id] => rjgcf3CnC3HZ3RMFy
+            [username] => ma
+        )
+
+    [closer] => user
+)
+Array
+(
+    [_id] => rLj7obSevphgDzBSJ
+    [label] => 游客来电-->随机数:778
+    [createdAt] => 2024-09-14T00:57:04.202Z
+    [lastMessageAt] => 2024-09-14T01:02:17.812Z
+    [visitor] => Array
+        (
+            [_id] => 66dec13143ae56d4d6d1588f
+            [token] => 8fc4d7a1b97d069f7f21bfe63ff3226bc5f303f69559f5292d55c2fe7d4292ad
+            [name] => 游客来电--用户TGLTEMDIM6OTUMQ
+            [username] => guest-4
+            [department] => 66dec0ef43ae56d4d6d1588d
+            [email] => Array
+                (
+                    [0] => Array
+                        (
+                            [address] => visitor@example.com
+                        )
+
+                )
+
+            [phone] => Array
+                (
+                    [0] => Array
+                        (
+                            [phoneNumber] => 2312123123
+                        )
+
+                    [1] => Array
+                        (
+                            [phoneNumber] => 13123123
+                        )
+
+                )
+
+        )
+
+    [agent] => Array
+        (
+            [_id] => rjgcf3CnC3HZ3RMFy
+            [username] => ma
+            [name] => zhima
+            [email] => makij98629@coloruz.com
+        )
+
+    [crmData] => 
+{"status":"success"}
+    [type] => LivechatSession
+    [messages] => Array
+        (
+            [0] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => 66dec13143ae56d4d6d1588f
+                            [username] => guest-4
+                            [name] => 游客来电-->随机数:778
+                        )
+
+                    [_id] => Dz6w4mkQkAnah5PoX
+                    [username] => guest-4
+                    [msg] => 呼叫24h客服
+                    [ts] => 2024-09-14T01:02:17.812Z
+                    [rid] => rLj7obSevphgDzBSJ
+                    [_updatedAt] => 2024-09-14T01:02:17.859Z
+                )
+
+            [1] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => rjgcf3CnC3HZ3RMFy
+                            [username] => ma
+                        )
+
+                    [_id] => 672035fe4512925822c794b0
+                    [username] => ma
+                    [msg] => 3
+                    [ts] => 2024-10-29T01:10:22.258Z
+                    [rid] => rLj7obSevphgDzBSJ
+                    [agentId] => rjgcf3CnC3HZ3RMFy
+                    [closingMessage] => 1
+                    [_updatedAt] => 2024-10-29T01:10:22.258Z
+                )
+
+        )
+
+    [departmentId] => 66dec0ef43ae56d4d6d1588d
+    [servedBy] => Array
+        (
+            [_id] => rjgcf3CnC3HZ3RMFy
+            [username] => ma
+            [ts] => 2024-09-14T00:57:04.330Z
+        )
+
+    [closedAt] => 2024-10-29T01:10:22.231Z
+    [closedBy] => Array
+        (
+            [_id] => rjgcf3CnC3HZ3RMFy
+            [username] => ma
+        )
+
+    [closer] => user
+)
+Array
+(
+    [_id] => WpJxhQs9PhM4d5Tzp
+    [label] => 游客来电-->随机数:408
+    [createdAt] => 2024-09-14T00:47:12.958Z
+    [lastMessageAt] => 2024-09-14T00:55:34.319Z
+    [visitor] => Array
+        (
+            [_id] => 66dec13143ae56d4d6d1588f
+            [token] => 8fc4d7a1b97d069f7f21bfe63ff3226bc5f303f69559f5292d55c2fe7d4292ad
+            [name] => 游客来电--用户TGLTEMDIM6OTUMQ
+            [username] => guest-4
+            [department] => 66dec0ef43ae56d4d6d1588d
+            [email] => Array
+                (
+                    [0] => Array
+                        (
+                            [address] => visitor@example.com
+                        )
+
+                )
+
+            [phone] => Array
+                (
+                    [0] => Array
+                        (
+                            [phoneNumber] => 2312123123
+                        )
+
+                    [1] => Array
+                        (
+                            [phoneNumber] => 13123123
+                        )
+
+                )
+
+        )
+
+    [agent] => Array
+        (
+            [_id] => rjgcf3CnC3HZ3RMFy
+            [username] => ma
+            [name] => zhima
+            [email] => makij98629@coloruz.com
+        )
+
+    [crmData] => 
+{"status":"success"}
+    [type] => LivechatSession
+    [messages] => Array
+        (
+            [0] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => rjgcf3CnC3HZ3RMFy
+                            [username] => ma
+                            [name] => zhima
+                        )
+
+                    [_id] => bhO33cfzB4oahKTza
+                    [username] => ma
+                    [msg] => 在的
+                    [ts] => 2024-09-14T00:47:22.310Z
+                    [rid] => WpJxhQs9PhM4d5Tzp
+                    [agentId] => rjgcf3CnC3HZ3RMFy
+                    [_updatedAt] => 2024-09-14T00:47:22.376Z
+                )
+
+            [1] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => 66dec13143ae56d4d6d1588f
+                            [username] => guest-4
+                            [name] => 游客来电-->随机数:408
+                        )
+
+                    [_id] => NPSQh2StAhMNiqZsm
+                    [username] => guest-4
+                    [msg] => 2312123123
+                    [ts] => 2024-09-14T00:47:37.237Z
+                    [rid] => WpJxhQs9PhM4d5Tzp
+                    [_updatedAt] => 2024-09-14T00:47:37.278Z
+                )
+
+            [2] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => 66dec13143ae56d4d6d1588f
+                            [username] => guest-4
+                            [name] => 游客来电-->随机数:408
+                        )
+
+                    [_id] => Ea6yB9MmumkYuyidp
+                    [username] => guest-4
+                    [msg] => 13123123
+                    [ts] => 2024-09-14T00:54:14.058Z
+                    [rid] => WpJxhQs9PhM4d5Tzp
+                    [_updatedAt] => 2024-09-14T00:54:14.107Z
+                )
+
+            [3] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => rjgcf3CnC3HZ3RMFy
+                            [username] => ma
+                            [name] => zhima
+                        )
+
+                    [_id] => MX41bSvyH0AGjV23V
+                    [username] => ma
+                    [msg] => 1222
+                    [ts] => 2024-09-14T00:54:25.285Z
+                    [rid] => WpJxhQs9PhM4d5Tzp
+                    [agentId] => rjgcf3CnC3HZ3RMFy
+                    [_updatedAt] => 2024-09-14T00:54:25.336Z
+                )
+
+            [4] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => 66dec13143ae56d4d6d1588f
+                            [username] => guest-4
+                            [name] => 游客来电-->随机数:408
+                        )
+
+                    [_id] => BeaPsCSP6RG8mNbEX
+                    [username] => guest-4
+                    [msg] => 呼叫24h客服
+                    [ts] => 2024-09-14T00:55:16.045Z
+                    [rid] => WpJxhQs9PhM4d5Tzp
+                    [_updatedAt] => 2024-09-14T00:55:16.103Z
+                )
+
+            [5] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => rjgcf3CnC3HZ3RMFy
+                            [username] => ma
+                            [name] => zhima
+                        )
+
+                    [_id] => TFcL2LoQV2GIoTHLx
+                    [username] => ma
+                    [msg] => ，
+                    [ts] => 2024-09-14T00:55:26.784Z
+                    [rid] => WpJxhQs9PhM4d5Tzp
+                    [agentId] => rjgcf3CnC3HZ3RMFy
+                    [_updatedAt] => 2024-09-14T00:55:26.831Z
+                )
+
+            [6] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => rjgcf3CnC3HZ3RMFy
+                            [username] => ma
+                            [name] => zhima
+                        )
+
+                    [_id] => mcchJGWGOAoqmpJyz
+                    [username] => ma
+                    [msg] => 1553
+                    [ts] => 2024-09-14T00:55:34.319Z
+                    [rid] => WpJxhQs9PhM4d5Tzp
+                    [agentId] => rjgcf3CnC3HZ3RMFy
+                    [_updatedAt] => 2024-09-14T00:55:34.381Z
+                )
+
+            [7] => Array
+                (
+                    [u] => Array
+                        (
+                            [_id] => rjgcf3CnC3HZ3RMFy
+                            [username] => ma
+                        )
+
+                    [_id] => 672036014512925822c794b1
+                    [username] => ma
+                    [msg] => 3
+                    [ts] => 2024-10-29T01:10:25.744Z
+                    [rid] => WpJxhQs9PhM4d5Tzp
+                    [agentId] => rjgcf3CnC3HZ3RMFy
+                    [closingMessage] => 1
+                    [_updatedAt] => 2024-10-29T01:10:25.744Z
+                )
+
+        )
+
+    [departmentId] => 66dec0ef43ae56d4d6d1588d
+    [servedBy] => Array
+        (
+            [_id] => rjgcf3CnC3HZ3RMFy
+            [username] => ma
+            [ts] => 2024-09-14T00:47:13.249Z
+        )
+
+    [closedAt] => 2024-10-29T01:10:25.722Z
+    [closedBy] => Array
+        (
+            [_id] => rjgcf3CnC3HZ3RMFy
+            [username] => ma
+        )
+
+    [closer] => user
+)
