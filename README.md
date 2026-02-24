@@ -1,4 +1,5 @@
 # AngelPay (天使支付) - L4 GitOps 部署
+<!-- Test comment for app repo verification -->
 
 ## 项目概述
 
