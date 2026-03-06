@@ -17,11 +17,11 @@
 
 | 端点 | URL | 预期 |
 |------|-----|------|
-| 首页 | http://3.91.149.91/ | 应用页面 |
-| 健康检查 | http://3.91.149.91/health | 200 + 版本信息 |
-| 就绪检查 | http://3.91.149.91/ready | 200 + DB连接状态 |
+| 首页 | http://aca949c424c184a968a1834fa87cfe5d-06601fcba2475693.elb.us-east-1.amazonaws.com/ | 应用页面 |
+| 健康检查 | http://aca949c424c184a968a1834fa87cfe5d-06601fcba2475693.elb.us-east-1.amazonaws.com/health | 200 + 版本信息 |
+| 就绪检查 | http://aca949c424c184a968a1834fa87cfe5d-06601fcba2475693.elb.us-east-1.amazonaws.com/ready | 200 + DB连接状态 |
 
-> 注：IP 为 EKS 节点公网 IP，Ingress Controller 通过 HostPort 方式暴露。
+> 注：通过 AWS NLB + NGINX Ingress Controller 暴露服务。
 
 ---
 
@@ -75,7 +75,7 @@ git push origin main
 # 4. Argo CD 自动检测到 env repo 变化，自动回滚
 # 等待 30 秒后验证
 kubectl -n angelpay-prod get pods
-curl http://3.91.149.91/health
+curl http://aca949c424c184a968a1834fa87cfe5d-06601fcba2475693.elb.us-east-1.amazonaws.com/health
 ```
 
 ### 预期现象
@@ -132,15 +132,14 @@ kubectl -n angelpay-prod create secret docker-registry ghcr-pull-secret \
 ### Kubernetes 资源
 
 - **Namespace**: `angelpay-prod`
-- **Deployment**: 2 replicas, RollingUpdate (maxSurge=1, maxUnavailable=0)
+- **Deployment**: 1 replica, RollingUpdate (maxSurge=1, maxUnavailable=0)
 - **Service**: ClusterIP → port 80
-- **Ingress**: Nginx Ingress Controller (HostPort 80/443)
+- **Ingress**: NGINX Ingress Controller (AWS NLB)
 - **ConfigMap**: 数据库连接信息 + config.php
 - **Secret**: DB 凭证 + GHCR pull secret (kubectl 管理，不入 Git)
-- **HPA**: 自动水平扩缩容
-- **NetworkPolicy**: 网络安全隔离
 - **Probes**: liveness (`/health`) + readiness (`/ready`)
-- **Resources**: requests(200m/256Mi) limits(1/1Gi)
+- **Resources**: requests(100m/128Mi) limits(500m/512Mi)
+- **MySQL**: 集群内 MySQL 8.0 (emptyDir 存储)
 
 ### 容器架构
 
